@@ -14,6 +14,11 @@
 		FD6F1EDC21EDAB990082D7BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6F1EDA21EDAB990082D7BE /* LaunchScreen.storyboard */; };
 		FD6F1EE721EDAB990082D7BE /* QFCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F1EE621EDAB990082D7BE /* QFCommandTests.swift */; };
 		FD6F1EF221EDAB990082D7BE /* QFCommandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F1EF121EDAB990082D7BE /* QFCommandUITests.swift */; };
+		FD6F1F1321EDB52F0082D7BE /* AbstractCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F1F0B21EDB52F0082D7BE /* AbstractCommand.swift */; };
+		FD6F1F1421EDB52F0082D7BE /* Waiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F1F0D21EDB52F0082D7BE /* Waiter.swift */; };
+		FD6F1F1521EDB52F0082D7BE /* BakeCheckenWinngCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F1F0F21EDB52F0082D7BE /* BakeCheckenWinngCommand.swift */; };
+		FD6F1F1621EDB52F0082D7BE /* BakeMuttonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F1F1021EDB52F0082D7BE /* BakeMuttonCommand.swift */; };
+		FD6F1F1721EDB52F0082D7BE /* Cooker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F1F1221EDB52F0082D7BE /* Cooker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		FD6F1EED21EDAB990082D7BE /* QFCommandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QFCommandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6F1EF121EDAB990082D7BE /* QFCommandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QFCommandUITests.swift; sourceTree = "<group>"; };
 		FD6F1EF321EDAB990082D7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6F1F0B21EDB52F0082D7BE /* AbstractCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCommand.swift; sourceTree = "<group>"; };
+		FD6F1F0D21EDB52F0082D7BE /* Waiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waiter.swift; sourceTree = "<group>"; };
+		FD6F1F0F21EDB52F0082D7BE /* BakeCheckenWinngCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BakeCheckenWinngCommand.swift; sourceTree = "<group>"; };
+		FD6F1F1021EDB52F0082D7BE /* BakeMuttonCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BakeMuttonCommand.swift; sourceTree = "<group>"; };
+		FD6F1F1221EDB52F0082D7BE /* Cooker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cooker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,10 @@
 		FD6F1ED021EDAB980082D7BE /* QFCommand */ = {
 			isa = PBXGroup;
 			children = (
+				FD6F1F0A21EDB52F0082D7BE /* 抽象命令 */,
+				FD6F1F0E21EDB52F0082D7BE /* 具体命令 */,
+				FD6F1F1121EDB52F0082D7BE /* 厨师 */,
+				FD6F1F0C21EDB52F0082D7BE /* 服务生 */,
 				FD6F1ED121EDAB980082D7BE /* AppDelegate.swift */,
 				FD6F1ED321EDAB980082D7BE /* ViewController.swift */,
 				FD6F1ED521EDAB980082D7BE /* Main.storyboard */,
@@ -123,6 +137,39 @@
 				FD6F1EF321EDAB990082D7BE /* Info.plist */,
 			);
 			path = QFCommandUITests;
+			sourceTree = "<group>";
+		};
+		FD6F1F0A21EDB52F0082D7BE /* 抽象命令 */ = {
+			isa = PBXGroup;
+			children = (
+				FD6F1F0B21EDB52F0082D7BE /* AbstractCommand.swift */,
+			);
+			path = "抽象命令";
+			sourceTree = "<group>";
+		};
+		FD6F1F0C21EDB52F0082D7BE /* 服务生 */ = {
+			isa = PBXGroup;
+			children = (
+				FD6F1F0D21EDB52F0082D7BE /* Waiter.swift */,
+			);
+			path = "服务生";
+			sourceTree = "<group>";
+		};
+		FD6F1F0E21EDB52F0082D7BE /* 具体命令 */ = {
+			isa = PBXGroup;
+			children = (
+				FD6F1F0F21EDB52F0082D7BE /* BakeCheckenWinngCommand.swift */,
+				FD6F1F1021EDB52F0082D7BE /* BakeMuttonCommand.swift */,
+			);
+			path = "具体命令";
+			sourceTree = "<group>";
+		};
+		FD6F1F1121EDB52F0082D7BE /* 厨师 */ = {
+			isa = PBXGroup;
+			children = (
+				FD6F1F1221EDB52F0082D7BE /* Cooker.swift */,
+			);
+			path = "厨师";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6F1F1721EDB52F0082D7BE /* Cooker.swift in Sources */,
 				FD6F1ED421EDAB980082D7BE /* ViewController.swift in Sources */,
+				FD6F1F1621EDB52F0082D7BE /* BakeMuttonCommand.swift in Sources */,
 				FD6F1ED221EDAB980082D7BE /* AppDelegate.swift in Sources */,
+				FD6F1F1321EDB52F0082D7BE /* AbstractCommand.swift in Sources */,
+				FD6F1F1521EDB52F0082D7BE /* BakeCheckenWinngCommand.swift in Sources */,
+				FD6F1F1421EDB52F0082D7BE /* Waiter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +485,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
 				INFOPLIST_FILE = QFCommand/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +504,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
 				INFOPLIST_FILE = QFCommand/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

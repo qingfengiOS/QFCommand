@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  QFCommand
 //
-//  Created by 李一平 on 2019/1/15.
+//  Created by 情风 on 2019/1/15.
 //  Copyright © 2019 qingfengiOS. All rights reserved.
 //
 
